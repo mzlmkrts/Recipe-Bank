@@ -1,0 +1,101 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: rgba(240, 138, 93, 0.96); 
+    color: white;
+    border-radius: 15px;
+}
+
+.logo-complete{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    
+}
+.logo-complete > * {
+    margin-right: -25px; /* Adjust the value to decrease or increase the spacing */
+}
+
+.logo-complete > .logo-text {
+    font-family: 'Jersey 15 Charted', sans-serif; /* Fallback to a generic sans-serif font */
+    font-size: 1.35rem;
+    color: #6a2c70;
+    display: block;
+}
+
+.logo-text p {
+    margin: 0; /* Set margin to 0 to remove the gap between paragraphs */
+}
+
+
+
+
+.logo img {
+    height: 80px; /* Adjust based on your logo */
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    padding: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #b83b5e; /* Complementary contrast color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #6a2c70; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+.Search-action{
+    
+  display: grid;
+  grid-template-columns: auto auto; /* Defines two columns */
+  grid-gap: 10px; 
+  margin-top: 100px;
+  padding-bottom: 25px;
+    
+}
+
+.Search-action button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    margin-top: 7px;
+    height: 70%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Transition for multiple properties */
+  }
+  
+  .Search-action button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* More prominent shadow on hover */
+  }
+  
+  .Search-action input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  .Search-action input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76,175,80,0.5);
+  }
+  
+  .Search-action input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .Search-action input[type="text"] {
+      font-size: 14px;
+    }
+  }
+  
+  .title {
+    background-color: #f0f0f0; 
+    color:red ;/* Light grey background */
+    /* Other styles */
+  }
+  
+  
